@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.container {
+  width: 100%;
+  padding: 0 5.5%;
+  height: 600px;
+  margin: 0;
+  max-width: 1900px; }
+  .container .row {
+    height: 100%; }
+  .container .menu {
+    width: 13%;
+    height: 100%;
+    background-color: #FAFFC7;
+    border: 1px solid black; }
+  .container .content {
+    background-color: #FFDED6;
+    width: 70%;
+    height: 100%; }
+
+/*# sourceMappingURL=stylesheet.css.map */
