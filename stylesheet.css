@@ -16,11 +16,47 @@ body {
     height: 100%; }
   .container .menu {
     width: 13%;
-    height: 100%;
-    background-color: #FAFFC7;
-    border: 1px solid black; }
+    height: 100%; }
+    .container .menu h1 {
+      display: block;
+      font-family: "Yeon Sung", cursive;
+      padding-top: 100px; }
+    .container .menu ul {
+      list-style: none;
+      padding: 0;
+      font-size: 13px;
+      line-height: 1.5em;
+      padding: 25px 0 25px; }
+    .container .menu a {
+      padding: 5px 5px 5px 3px;
+      display: inline-block;
+      color: #444444;
+      text-decoration: none;
+      font-family: "Voltaire", sans-serif; }
+      .container .menu a:hover {
+        color: #81bbaa;
+        font-size: 16px; }
+    .container .menu footer {
+      height: 100px; }
+      .container .menu footer .row {
+        height: 50%;
+        margin: 0; }
+        .container .menu footer .row img {
+          height: 50px;
+          width: 50px; }
+        .container .menu footer .row button {
+          width: 45%;
+          height: 40px;
+          padding: 0;
+          margin: 8px 0 0 5px; }
+      .container .menu footer h4 {
+        display: block;
+        font-family: "Voltaire", sans-serif;
+        font-size: 12px;
+        color: black;
+        margin: 20px 0 0 8px; }
   .container .content {
-    background-color: #FFDED6;
+    background-color: lightgray;
     width: 70%;
     height: 100%; }
 

@@ -1,6 +1,11 @@
-$color1 :#FAFFC7;
+//@import ".idea/stylesheets/bootstrap";
+$green :#81bbaa;
+
 $color2 :#FFDED6;
 $border :1px solid black;
+$font :'Yeon Sung', cursive;
+$font2 : 'Voltaire', sans-serif;
+$fontMenu:"Freight Sans Condensed Book", "Freight Sans Condensed Book", sans-serif;
 *,
 *:before,
 *:after {
@@ -17,19 +22,70 @@ body {
   max-width: 1900px;
   .row {
     height: 100%;
+
   }
   .menu {
     width: 13%;
     height: 100%;
-    background-color: $color1;
-    border: $border;
+    //background-color: $color1;
+    //border: $border;
+    h1 {
+      display: block;
+      font-family: $font;
+      padding-top: 100px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 13px;
+      line-height: 1.5em;
+      padding: 25px 0 25px;
+    }
+    a {
+      padding: 5px 5px 5px 3px;
+      display: inline-block;
+      color: #444444;
+      text-decoration: none;
+      font-family:$font2;
+      &:hover{
+        color:$green;
+        font-size: 16px;
+      }
+    }
+    footer {
+      //border: $border;
+      height: 100px;
+      .row {
+        height: 50%;
+        margin: 0;
+        img{
+          height: 50px;
+          width: 50px;
+        }
+        button {
+          width: 45%;
+          height: 40px;
+          padding: 0;
+          margin: 8px 0 0 5px;
+        }
+      }
+      h4 {
+        display: block;
+        font-family: $font2;
+        font-size: 12px;
+        color: black;
+        margin: 20px 0 0 8px;
+      }
+    }
   }
   .content {
-    background-color: $color2;
+    background-color: lightgray;
     width: 70%;
     height: 100%;
+
   }
 }
+
 
 
 
