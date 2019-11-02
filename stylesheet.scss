@@ -25,7 +25,7 @@ body {
 
   }
   .menu {
-    width: 13%;
+    width: 224px;
     height: 100%;
     //background-color: $color1;
     //border: $border;
@@ -56,7 +56,7 @@ body {
       //border: $border;
       height: 100px;
       .row {
-        height: 50%;
+        //height: 50%;
         margin: 0;
         img{
           height: 50px;
@@ -68,18 +68,72 @@ body {
           padding: 0;
           margin: 8px 0 0 5px;
         }
+        #popup{
+          width: 1px;
+          position: relative;
+          transform: scale(0);
+          transition: all ease-in-out 300ms;
+          z-index: 100;
+          #arrow {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 20px;
+            left: 5px;
+            transform: rotate(45deg);
+            background-color: #888888;
+          }
+          #popup-content{
+            position: absolute;
+            width: 190px;
+            //height: 205px;
+            left: 10px;
+            top: 8px;
+            background-color: #888888;
+            border-radius: 5px;
+            a {
+              display: block;
+              padding: 18px;
+              line-height: 15px;
+              position: relative;
+              color: black;
+              &.line-bottom:after {
+                content: ' ';
+                position: absolute;
+                top: 100%;
+                left: 5%;
+                width: 90%;
+                border-top: 1px darkgray solid;
+              }
+              img {
+                height: 30px;
+                width: 30px;
+              }
+            }
+          }
+        }
       }
       h4 {
         display: block;
         font-family: $font2;
         font-size: 12px;
         color: black;
-        margin: 20px 0 0 8px;
+        margin: 10px 0 0 8px;
+      }
+      #overlay{
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: all;
+        z-index: 0;
       }
     }
   }
   .content {
-    background-color: lightgray;
+    //background-color: lightgray;
     width: 70%;
     height: 100%;
 

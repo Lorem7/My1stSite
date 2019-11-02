@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Voltaire|Yeon+Sung&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
     <div class="container">
@@ -24,8 +25,18 @@
                     <!--<a href="#"><img src="images/iconfinder_facebook_six_107120.svg" alt=""></a> -->
                     <a href="#"><img src="images/iconfinder_ebay_294688.svg" alt=""></a>
                     <a href="#"><img src="images/iconfinder__Paypal-39_1156727.svg" alt=""></a>
-                    <button class="btn btn-light">Share</button>
+                    <button class="btn btn-light" id="share-btn">Share</button>
+                    <div id="popup">
+                        <div id="arrow"></div>
+                        <div id="popup-content">
+                            <a href="" class="line-bottom"><img src="images/iconfinder_facebook_six_107120.svg" alt="">&nbsp; Share to facebook</a>
+                            <a href="" class="line-bottom"><img src="images/iconfinder_twitter_six_107069.svg" alt="">&nbsp;Share to twitter</a>
+                            <a href="" class="line-bottom"><img src="images/iconfinder_tumblr_six_107074.svg" alt="">&nbsp;Post to tumblr</a>
+                            <a href=""><img src="images/iconfinder_instagram_six_107098.svg" alt="">&nbsp;Post to instagram</a>
+                        </div>
+                    </div>
                 </div>
+                <div id="overlay"></div>
                 <h4>Copyright © 2020</h4>
             </footer>
         </div>
