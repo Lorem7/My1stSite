@@ -9,7 +9,7 @@ body {
 .container {
   width: 100%;
   padding: 0 5.5%;
-  height: 600px;
+  height: 800px;
   margin: 0;
   max-width: 1900px; }
   .container .row {
@@ -102,6 +102,19 @@ body {
         z-index: 0; }
   .container .content {
     width: 70%;
-    height: 100%; }
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 100px; }
+    .container .content #slider {
+      width: 100%;
+      height: 100%;
+      background-color: #eaeaea;
+      position: relative;
+      overflow: hidden; }
+      .container .content #slider img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: all ease 1s; }
 
 /*# sourceMappingURL=stylesheet.css.map */

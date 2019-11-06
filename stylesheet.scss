@@ -17,7 +17,7 @@ body {
 .container {
   width: 100%;
   padding: 0 5.5%;
-  height: 600px;
+  height: 800px;
   margin: 0;
   max-width: 1900px;
   .row {
@@ -136,6 +136,21 @@ body {
     //background-color: lightgray;
     width: 70%;
     height: 100%;
+    padding-top: 100px;
+    padding-left: 100px;
+    #slider {
+      width: 100%;
+      height: 100%;
+      background-color: #eaeaea;
+      position: relative;
+      overflow: hidden;
+      img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: all ease 1s;
+      }
+    }
 
   }
 }
