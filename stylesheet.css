@@ -24,18 +24,23 @@ body {
     .container .menu ul {
       list-style: none;
       padding: 0;
-      font-size: 13px;
+      font-size: 16px;
       line-height: 1.5em;
       padding: 25px 0 25px; }
     .container .menu a {
       padding: 5px 5px 5px 3px;
       display: inline-block;
       color: #444444;
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      -moz-text-decoration-color: transparent;
+      transition: ease 500ms;
       font-family: "Voltaire", sans-serif; }
       .container .menu a:hover {
         color: #81bbaa;
-        font-size: 16px; }
+        font-size: 16px;
+        text-decoration-color: black;
+        -moz-text-decoration-color: black; }
     .container .menu footer {
       height: 100px; }
       .container .menu footer .row {
@@ -74,7 +79,12 @@ body {
               padding: 18px;
               line-height: 15px;
               position: relative;
-              color: black; }
+              color: black;
+              text-decoration: none; }
+              .container .menu footer .row #popup #popup-content a:hover {
+                color: #81bbaa;
+                font-size: 16px;
+                transition: ease 400ms; }
               .container .menu footer .row #popup #popup-content a.line-bottom:after {
                 content: ' ';
                 position: absolute;
@@ -102,19 +112,17 @@ body {
         z-index: 0; }
   .container .content {
     width: 70%;
-    height: 100%;
     padding-top: 100px;
     padding-left: 100px; }
     .container .content #slider {
       width: 100%;
-      height: 100%;
-      background-color: #eaeaea;
+      height: auto;
+      background-color: white;
       position: relative;
-      overflow: hidden; }
-      .container .content #slider img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        transition: all ease 1s; }
+      overflow: hidden;
+      padding: 0;
+      margin: 0; }
+      .container .content #slider .carousel-item {
+        height: 100%; }
 
 /*# sourceMappingURL=stylesheet.css.map */

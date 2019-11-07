@@ -1,20 +1,4 @@
-
-// button share block
-let share = document.getElementById('share-btn');
-let menu = document.getElementById('popup');
-let overlay = document.querySelector('#overlay');
-share.addEventListener("click", function () {
-    menu.style.transform = 'scale(1)';
-    overlay.style.display = 'block';
-});
-overlay.addEventListener('click',() => {
-    menu.style.transform = 'scale(0)';
-    overlay.style.display = 'none';
-})
-
 //------Slider-----------
-
-let sliderBlock = document.getElementById('slider');
 let slides = document.querySelectorAll(".slider-image");
 let slideSrc = [];
 for (let i =0;i<slides.length;i++){
@@ -23,12 +7,14 @@ for (let i =0;i<slides.length;i++){
 }
 let step = 0;
 let offset = 0;
-let width = sliderBlock.clientWidth;
+let sliderBlock = document.getElementById('slider');
+let width = sliderBlock.offsetWidth;
 function draw () {
     let img = document.createElement('img');
     img.src = slideSrc[step];
     img.classList.add('slider-image');
     img.style.left = offset * width + 'px';
+    console.log(width);
     sliderBlock.appendChild(img);
     if(step + 1 == slideSrc.length){
         step = 0;
@@ -56,5 +42,3 @@ window.onload = () => {
     draw();
     setInterval(left,5000);
 }
-
-
