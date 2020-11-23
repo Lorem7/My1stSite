@@ -125,6 +125,25 @@ body {
       border-radius: 100%; }
     .container .content article .block2 img {
       width: 100%; }
+    .container .content article .block3 img {
+      float: left;
+      margin-right: 100px; }
+    .container .content article .block3 p {
+      padding-top: 100px; }
+    .container .content article .block5 img {
+      margin: 0 68px; }
+    .container .content article .block6 {
+      min-height: 600px; }
+      .container .content article .block6 img {
+        float: right;
+        margin-left: 100px; }
+      .container .content article .block6 p {
+        padding-top: 100px; }
+    .container .content article .block7 {
+      margin: 0px;
+      min-height: 700px; }
+      .container .content article .block7 p {
+        margin: 50px 0px; }
     .container .content #slider {
       width: 100%;
       height: auto;

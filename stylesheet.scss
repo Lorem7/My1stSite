@@ -167,6 +167,37 @@ body {
           width: 100%;
         }
       }
+      .block3 {
+          img {
+            float: left;
+            margin-right: 100px;
+          }
+          p {
+            padding-top: 100px;
+          }
+      }
+      .block5 {
+        img {
+          margin: 0 68px;
+        }
+      }
+      .block6 {
+        min-height: 600px;
+        img{
+          float: right;
+          margin-left: 100px;
+        }
+        p {
+          padding-top: 100px;
+        }
+      }
+      .block7 {
+        margin: 0px;
+        min-height: 700px;
+        p {
+          margin:50px 0px;
+        }
+      }
     }
     #slider {
       width: 100%;
